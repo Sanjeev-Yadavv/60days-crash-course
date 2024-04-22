@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        .wrapper {
+            width: 80vw;
+            margin: 200px auto;
+            position: relative;
+
+        }
+
+        .carousel {
+            display: flex;
+            gap: 10px;
+            overflow: hidden;
+            scroll-behavior: smooth;
+        }
+
+        img {
+            height: 150px;
+            width: calc(100% / 3);
+            object-fit: cover;
+        }
+        button{
+            border-radius: 50%;
+            position: absolute;
+            top: 40%;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(168, 192, 213);
+            height: 40px;
+            font-size: larger;
+            width: 40px;
+            transform: translate(-50%);
+        }
+        .left{
+            left: -5px;
+        }
+        .right{
+            right: -35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="left"><</button>
+        <div class="carousel">
+            <img src="/slider/img1.jpg" alt="">
+            <img src="/slider/img2.jpg" alt="">
+            <img src="/slider/img3.jpg" alt="">
+            <img src="/slider/img10.jpg" alt="">
+            <img src="/slider/img5.jpg" alt="">
+            <img src="/slider/img1.jpg" alt="">
+            <img src="/slider/img7.jpg" alt="">
+            <img src="/slider/img8.jpg" alt="">
+            <img src="/slider/img13.jpg" alt="">
+            <img src="/slider/img10.jpg" alt="">
+            <img src="/slider/img11.webp" alt="">
+            <img src="/slider/img12.jpg" alt="">
+            <img src="/slider/img13.jpg" alt="">
+            <img src="/slider/img14.jpg" alt="">
+            <img src="/slider/img15.jpg" alt="">
+            <img src="/slider/img16.jpg" alt="">
+            <img src="/slider/img17.jpg" alt="">
+            <img src="/slider/img18.jpg" alt="">
+            <img src="/slider/img19.jpg" alt="">
+            <img src="/slider/img20.jpg" alt="">
+
+        </div>
+        <button class="right">></button>
+    </div>
+</body>
+<script src="/slider/script.js"></script>
+</html>
